@@ -1,0 +1,20 @@
+{
+    "appid":"library3",
+    "apptype":"html",
+    "name":"non-webida-library",
+    "desc":"collection of code shared by apps which is not written by Webida team",
+    "url":"/~hyunikna/ws1/library/",
+    "version": "0.0.1",
+    "devDependencies": {
+        "grunt": "~0.4.2",
+        "grunt-contrib-copy": "~0.4.1",
+        "grunt-contrib-uglify": "~0.2.7",
+        "grunt-contrib-clean": "~0.4.0",
+        "jquery": "1.8.3"
+    },
+    "scripts": {
+        "prepublish": "echo 'prepublish'; if [ -z $RELEASE_BUILD ]; then grunt; else grunt release; fi"
+    },
+    "build-dir": "deploy"
+}
+
