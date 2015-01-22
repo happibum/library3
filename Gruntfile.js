@@ -5,7 +5,7 @@ module.exports = function (grunt) {
                 files: [
                     {
                         expand: true,
-                        cwd: './',
+                        cwd: 'src/',
                         src: ['**'],
                         dest: 'deploy/',
                     }
@@ -15,7 +15,7 @@ module.exports = function (grunt) {
                 files: [
                     {
                         expand: true,
-                        cwd: './',
+                        cwd: 'src/',
                         src: ['*.js', '**/*.js', '!node_modules/**', '!deploy/**'],
                         dest: 'deploy/',
                         rename: function (dest, src) {
